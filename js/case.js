@@ -36,17 +36,32 @@ function updateCaseTotalprice(newCaseUpdate) {
 document.getElementById('btn-plus').addEventListener('click', function () {
 
     const newCaseUpdate = updateCaseNumber(true);
-
     updateCaseTotalprice(newCaseUpdate);
 
+    // // calculate total ----
+    // const currentPhonePrice = getTextElementValueById('phn-total-price');
+    // const currentCasePrice = getTextElementValueById('total-price');
+    // const currentSubTital = currentPhonePrice + currentCasePrice
+
+    // const currentTotalElement = document.getElementById('sub-total');
+    // currentTotalElement.innerText = currentSubTital;
+    calculateSumTotal();
 
 })
 
 
 document.getElementById('btn-minus').addEventListener('click', function () {
-    const newCaseUpdate = updateCaseNumber(false);
 
+    const newCaseUpdate = updateCaseNumber(false);
     updateCaseTotalprice(newCaseUpdate);
 
+    // // calculate total ----
+    // const currentPhonePrice = getTextElementValueById('phn-total-price');
+    // const currentCasePrice = getTextElementValueById('total-price');
+    // const currentSubTital = currentPhonePrice + currentCasePrice
+
+    // const currentTotalElement = document.getElementById('sub-total');
+    // currentTotalElement.innerText = currentSubTital;
+    calculateSumTotal();
 
 })
